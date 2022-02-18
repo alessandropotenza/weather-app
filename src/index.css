@@ -57,15 +57,15 @@ body {
 
 .welcome-message {
   position: absolute;
-  left: 51%;
+  left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
-  font-size: 6vw;
+  font-size: max(6vw, 40px);
   white-space: nowrap;
 }
 
 .welcome-message p:hover {
-  transform: scale(1.005);
+  transform: scale(1.01);
 }
 
 .top-box {

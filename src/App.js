@@ -54,21 +54,23 @@ function App() {
           </>
          :
          <>
-         <div className='top-box'>
-          <div className='left-box'>
-            <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
-            <p className='description'>{locationInfo.description}</p>
-          </div>
-          <div className='right-box'>
-            <p>{Math.round(locationInfo.temp)}°C</p>
-            <div className='high-low-container'>
-              <p>{Math.round(locationInfo.tempLow)}</p>
-              <div className='line'>
+          <div className='top-box'>
+            <div className='left-box'>
+              <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
+              <p className='description'>{locationInfo.description}</p>
+            </div>
+            <div className='right-box'>
+              <p className='temp'>{Math.round(locationInfo.temp)}°C</p>
+              <div className='high-low-container'>
+                <p className='temp-low'>{Math.round(locationInfo.tempLow)}</p>
+                <div className='line-container'>
+                  <div className='line'>
+                  </div>
+                </div>
+                <p className='temp-high'>{Math.round(locationInfo.tempHigh)}</p>
               </div>
-              <p>{Math.round(locationInfo.tempHigh)}</p>
             </div>
           </div>
-         </div>
          </>
         }
         <div className='search-block'>

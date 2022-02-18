@@ -77,20 +77,24 @@ body {
 
 .left-box {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   left: 0;
   font-size: max(3vw, 25px);
 }
 
 .location:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .description {
+  width: min-content;
+  white-space: nowrap;
   font-size: max(1.5vw, 15px);
 }
 
 .description:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .right-box {
@@ -98,11 +102,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  right: 5%;
+  right: 3%;
   font-size: max(3vw, 25px);
 }
 
-.right-box p:hover {
+.temp:hover {
   transform: scale(1.05);
 }
 
@@ -113,6 +117,23 @@ body {
   justify-content: space-between;
 }
 
+.line-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .line {
+  height: 80%;
   border-left: 1px solid white;
 }
+
+.temp-low:hover {
+  transform: scale(1.2);
+}
+
+.temp-high:hover {
+  transform: scale(1.2);
+}
+

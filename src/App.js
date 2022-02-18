@@ -62,10 +62,10 @@ function App() {
           <div className='right-box'>
             <p>{Math.round(locationInfo.temp)}°C</p>
             <div className='high-low-container'>
-              <p>{Math.round(locationInfo.tempLow)}°C</p>
+              <p>{Math.round(locationInfo.tempLow)}</p>
               <div className='line'>
               </div>
-              <p>{Math.round(locationInfo.tempHigh)}°C</p>
+              <p>{Math.round(locationInfo.tempHigh)}</p>
             </div>
           </div>
          </div>

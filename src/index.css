@@ -109,7 +109,7 @@ body {
 .high-low-container {
   display: flex;
   font-size: max(1.5vw, 15px);
-  width: 120%;
+  width: 100%;
   justify-content: space-between;
 }
 

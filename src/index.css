@@ -78,7 +78,7 @@ body {
 .left-box {
   position: absolute;
   left: 0;
-  font-size: 3vw;
+  font-size: max(3vw, 25px);
 }
 
 .location:hover {
@@ -86,7 +86,7 @@ body {
 }
 
 .description {
-  font-size: 1.5vw;
+  font-size: max(1.5vw, 15px);
 }
 
 .description:hover {
@@ -95,10 +95,24 @@ body {
 
 .right-box {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   right: 5%;
-  font-size: 3vw;
+  font-size: max(3vw, 25px);
 }
 
 .right-box p:hover {
   transform: scale(1.05);
+}
+
+.high-low-container {
+  display: flex;
+  font-size: max(1.5vw, 15px);
+  width: 120%;
+  justify-content: space-between;
+}
+
+.line {
+  border-left: 1px solid white;
 }

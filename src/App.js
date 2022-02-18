@@ -21,6 +21,8 @@ function App() {
     .then(result => setLocationInfo({
       cityName: result.name,
       temp: result.main.temp,
+      tempLow: result.main.temp_min,
+      tempHigh: result.main.temp_max,
       condition: result.weather[0].main,
       description: result.weather[0].description,
       country: result.sys.country
@@ -54,11 +56,17 @@ function App() {
          <>
          <div className='top-box'>
           <div className='left-box'>
-              <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
-              <p className='description'>{locationInfo.description}</p>
+            <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
+            <p className='description'>{locationInfo.description}</p>
           </div>
           <div className='right-box'>
             <p>{Math.round(locationInfo.temp)}°C</p>
+            <div className='high-low-container'>
+              <p>{Math.round(locationInfo.tempLow)}°C</p>
+              <div className='line'>
+              </div>
+              <p>{Math.round(locationInfo.tempHigh)}°C</p>
+            </div>
           </div>
          </div>
          </>

@@ -46,19 +46,21 @@ function App() {
       }>
         {Object.keys(locationInfo).length === 0 ?
           <>
-            <div class='welcome-message'>
+            <div className='welcome-message'>
               <p>Find your local weather</p>
             </div>
           </>
          :
          <>
+         <div className='top-box'>
           <div className='left-box'>
-            <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
-            <p className='description'>{locationInfo.description}</p>
+              <p className='location'>{locationInfo.cityName}, {locationInfo.country}</p>
+              <p className='description'>{locationInfo.description}</p>
           </div>
           <div className='right-box'>
             <p>{Math.round(locationInfo.temp)}°C</p>
           </div>
+         </div>
          </>
         }
         <div className='search-block'>
